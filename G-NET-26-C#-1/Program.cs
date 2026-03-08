@@ -1,4 +1,6 @@
-﻿using static System.Net.WebRequestMethods;
+﻿using System.Buffers.Text;
+using static System.Net.WebRequestMethods;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace G_NET_26_C__1
 {
@@ -15,7 +17,7 @@ namespace G_NET_26_C__1
             //-- Organize code into groups.
             // 
             //    How do they help in code organization?
-             //--making large code files easier to navigate and maintain.
+            //--making large code files easier to navigate and maintain.
             //
             // ══════════════════════════════════════════════════════════════════════
 
@@ -23,6 +25,35 @@ namespace G_NET_26_C__1
 
             #endregion
 
+            #region Question 2: Variable Declaration - Explicit vs Implicit
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 3: VARIABLE DECLARATION - EXPLICIT VS IMPLICIT
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is the difference between explicit and implicit variable 
+            //    declaration in C#? Provide examples of both.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+
+
+
+            // EXPLICIT DECLARATION 
+            //*int, string
+            //*Can be declared without a value.
+            //* must know the type beforehand.
+            //* int age = 20;
+            //string name = "Gehad";
+
+            // IMPLICIT DECLARATION 
+            //*var
+            //*Must be assigned a value immediately.
+            //* Its type cannot be changed later.
+            //* The compiler handles the type Based on the value we place.
+            //* var num = 10;
+            //var message = "Hello";
+
+
+            #endregion
 
 
         }
