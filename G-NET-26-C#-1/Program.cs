@@ -145,13 +145,27 @@ namespace G_NET_26_C__1
             //
             // ══════════════════════════════════════════════════════════════════════
             //*Lifetime is how long a variable exists in memory — from creation to destruction.
-            
+
             //Local Variables:
             //*Created When the method where they are declared is called.
             //* Destroyed When the method returns(
             //Static Variables:
             //*Created When the App start.
             //*Destroyed When the App end.
+
+            #endregion
+
+            #region Question 7: Garbage Collector
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 7: GARBAGE COLLECTOR
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is the Garbage Collector in C#? How does it affect the 
+            //    lifetime of objects?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*Garbage Collector automatically removes objects from Heap when no references point to them.
+            //*Making the object's life end as soon as it becomes inaccessible, thus preventing the accumulation of unused data and memory corruption.
 
             #endregion
 
