@@ -1,4 +1,5 @@
 ﻿using System.Buffers.Text;
+using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Reflection.Emit;
 using static System.Net.WebRequestMethods;
@@ -133,6 +134,27 @@ namespace G_NET_26_C__1
             //        Console.WriteLine(blockLevel);//doesn't here
             //    }
             #endregion
+
+            #region Question 6: Variable Lifetime - Local vs Static
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 6: VARIABLE LIFETIME - LOCAL VS STATIC
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is variable lifetime? Explain the lifetime of local variables 
+            //    vs static variables.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*Lifetime is how long a variable exists in memory — from creation to destruction.
+            
+            //Local Variables:
+            //*Created When the method where they are declared is called.
+            //* Destroyed When the method returns(
+            //Static Variables:
+            //*Created When the App start.
+            //*Destroyed When the App end.
+
+            #endregion
+
 
 
 
