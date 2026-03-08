@@ -1,5 +1,6 @@
 ﻿using System.Buffers.Text;
 using System.Diagnostics.Metrics;
+using System.Reflection.Emit;
 using static System.Net.WebRequestMethods;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -73,8 +74,45 @@ namespace G_NET_26_C__1
 
             #endregion
 
+            #region Question 4: Class-level vs Method-level Scope
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 4: CLASS-LEVEL VS METHOD-LEVEL SCOPE
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Explain the difference between class-level scope and method-level 
+            //    scope with examples.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+        //    class-level scope:
+        //    *Variables declared at this level are known as Fields.
+        //    * accessible from anywhere within the class
+        //    *These variables live as long as the object (instance) exists in memory
+        //Example 
+        //    class MyClass
+        //{
+        //    private int _classLevel = 1;
+        //    public void MethodA()
+        //    {
+        //        Console.WriteLine(_classLevel);
+        //    }
+        //}
 
 
-        }
+
+        // method - level scope:"Local Variables"
+        //*Variables declared inside a method (including parameters).
+        //*only visible and accessible within that specific method.
+        //* lifetime is short; they are created when the method is called and destroyed when the method returns.
+        //Example 
+        //public void MyMethod(int param)
+        //  {
+        //      int methodLevel = 2;
+        //    Console.WriteLine(methodLevel);
+        //  }
+        #endregion
+
+
+
     }
+}
 }
