@@ -1,4 +1,5 @@
 ﻿using System.Buffers.Text;
+using System.Diagnostics.Metrics;
 using static System.Net.WebRequestMethods;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -54,6 +55,24 @@ namespace G_NET_26_C__1
 
 
             #endregion
+
+            #region Question 3: Constants
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 4: CONSTANTS
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Write the syntax for declaring a constant in C#. Why would you use 
+            //    a constant instead of a regular variable?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*To ensure that value It will never change while the program is running.
+            //* Improved performance as the compiler places the value directly, making it faster.
+
+            // Constant examples
+            //const double Pi = 3.14159;
+
+            #endregion
+
 
 
         }
