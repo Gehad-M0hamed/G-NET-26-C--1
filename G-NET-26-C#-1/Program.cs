@@ -83,36 +83,59 @@ namespace G_NET_26_C__1
             //    scope with examples.
             //
             // ══════════════════════════════════════════════════════════════════════
-        //    class-level scope:
-        //    *Variables declared at this level are known as Fields.
-        //    * accessible from anywhere within the class
-        //    *These variables live as long as the object (instance) exists in memory
-        //Example 
-        //    class MyClass
-        //{
-        //    private int _classLevel = 1;
-        //    public void MethodA()
-        //    {
-        //        Console.WriteLine(_classLevel);
-        //    }
-        //}
+            //    class-level scope:
+            //    *Variables declared at this level are known as Fields.
+            //    * accessible from anywhere within the class
+            //    *These variables live as long as the object (instance) exists in memory
+            //Example 
+            //    class MyClass
+            //{
+            //    private int _classLevel = 1;
+            //    public void MethodA()
+            //    {
+            //        Console.WriteLine(_classLevel);
+            //    }
+            //}
 
 
 
-        // method - level scope:"Local Variables"
-        //*Variables declared inside a method (including parameters).
-        //*only visible and accessible within that specific method.
-        //* lifetime is short; they are created when the method is called and destroyed when the method returns.
-        //Example 
-        //public void MyMethod(int param)
-        //  {
-        //      int methodLevel = 2;
-        //    Console.WriteLine(methodLevel);
-        //  }
-        #endregion
+            // method - level scope:"Local Variables"
+            //*Variables declared inside a method (including parameters).
+            //*only visible and accessible within that specific method.
+            //* lifetime is short; they are created when the method is called and destroyed when the method returns.
+            //Example 
+            //public void MyMethod(int param)
+            //  {
+            //      int methodLevel = 2;
+            //    Console.WriteLine(methodLevel);
+            //  }
+            #endregion
+
+            #region Question 5: Block-level Scope
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 5: BLOCK-LEVEL SCOPE
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is block-level scope? Give an example showing a variable that 
+            //    is only accessible within a specific block.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*refers to the visibility of a variable declared within a specific block of code
+            //*if,for,while ,foreach
+            //example
+            //    public void MyMethod()
+            //    {
+            //        if (true)
+            //        {
+            //            int blockLevel = 4;
+            //            Console.WriteLine(blockLevel);//Accessible 
+            //        }
+            //        Console.WriteLine(blockLevel);//doesn't here
+            //    }
+            #endregion
 
 
 
+        }
     }
-}
 }
