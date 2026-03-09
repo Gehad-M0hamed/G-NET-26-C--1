@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Diagnostics.Metrics;
 using System.Reflection.Emit;
+using System.Timers;
+using System.Xml.Linq;
+using static System.Formats.Asn1.AsnWriter;
 using static System.Net.WebRequestMethods;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -170,8 +173,23 @@ namespace G_NET_26_C__1
             #endregion
 
 
+            #region Question 8: Variable Shadowing
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 8: VARIABLE SHADOWING
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is variable shadowing in C#? Does C# allow shadowing in 
+            //    nested blocks within the same method?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*Shadowing occurs when a variable declared in an inner scope has the same name as one in an outer scope
+            //    * No, It will happen a compile -time error
+            //    *Can only shadow class-level fields with local variables.
+            #endregion
 
 
-        }
+
+
+    }
     }
 }
