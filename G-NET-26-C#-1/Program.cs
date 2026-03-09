@@ -2,7 +2,11 @@
 using System.Collections;
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
+using System.Numerics;
+using System.Reflection;
 using System.Reflection.Emit;
+using System.Runtime.ConstrainedExecution;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Timers;
 using System.Xml.Linq;
@@ -220,6 +224,34 @@ namespace G_NET_26_C__1
             //(a)camelCase
             //(b)PascalCase
             //(c)PascalCase
+
+            #endregion
+
+            #region Question 11: Error Types
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 11: ERROR TYPES
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Compare and contrast syntax errors, runtime errors, and logical 
+            //    errors. Provide an example of each.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //syntax errors:
+            //    *It happens when:Before running
+            //    *Detected By: Compiler.
+            //    * Program won't start
+            //     example: Missing(;)
+            //runtime errors:
+            //    *It happens when:While runningز
+            //    *Detected By: CLR / Exceptionز
+            //    * Program crashes
+            //     example:Divide by (0)
+            //logical errors:
+            //    *It happens when:After runningز
+            //    *Detected By: Developer / Testing
+            //* Wrong result
+            //       example:(+)instead of (*)
+
 
             #endregion
 
