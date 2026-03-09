@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Timers;
 using System.Xml.Linq;
 using static System.Formats.Asn1.AsnWriter;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -193,7 +194,6 @@ namespace G_NET_26_C__1
             //    *Can only shadow class-level fields with local variables.
             #endregion
 
-
             #region Question 9: C# Naming Rules
             // ══════════════════════════════════════════════════════════════════════
             // QUESTION 9: C# NAMING RULES
@@ -254,6 +254,25 @@ namespace G_NET_26_C__1
 
 
             #endregion
+
+            #region Question 12: Exception Handling Importance
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 12: EXCEPTION HANDLING IMPORTANCE
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Why is exception handling important in C#? What would happen if 
+            //    you don't handle exceptions?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+                //*allows a program to deal with unexpected runtime errors.
+                //*Prevent application crash.
+                //*Log details for debugging
+                //**The program will terminate immediately and "die".
+
+            #endregion
+
+
+
 
         }
     }
