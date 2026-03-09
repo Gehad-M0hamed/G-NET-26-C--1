@@ -3,6 +3,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Metrics;
+using System.Drawing;
 using System.Numerics;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -347,24 +348,47 @@ namespace G_NET_26_C__1
             //    What types of data are stored in each?
             //
             // ══════════════════════════════════════════════════════════════════════
-        //Stack:
-        //    *Very Fast
-        //    * Limited(~1MB)
-        //    *Automatic
-        //    * Local Variables
-        //    *Method Parameters
-        //    *Return Addresses
-        //Heap:
-        //*Slower
-        //* Large(GBs)
-        //* Garbage Collector.
-        //* Objects(new)
-        //*Arrays
-        //*Strings
+            //Stack:
+            //    *Very Fast
+            //    * Limited(~1MB)
+            //    *Automatic
+            //    * Local Variables
+            //    *Method Parameters
+            //    *Return Addresses
+            //Heap:
+            //*Slower
+            //* Large(GBs)
+            //* Garbage Collector.
+            //* Objects(new)
+            //*Arrays
+            //*Strings
 
 
             #endregion
 
+            #region Question 18: Value Types vs Reference Types
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 18: VALUE TYPES VS REFERENCE TYPES
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Write a code example showing how value types and reference types 
+            //    behave differently when assigned to another variable.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            
+
+        //int x = 10;
+        //    int y = x; 
+        //    y = 20;
+        //    Console.WriteLine($" x = {x}, y = {y}");// x = 10, y = 20
+        //    Point p1 = new Point() { Coordinates ="(5,5)" };
+        //    Point p2 = p1;
+        //    p2.Coordinates = "(4,4)";
+        //    Console.WriteLine($" p1 = {p1.Coordinates}, p2 = {p2.Coordinates}");//p1 = (4, 4), p2 = (4, 4)
+            #endregion
+           
+ 
         }
+       //* class Point { public string Coordinates; }
     }
 }
