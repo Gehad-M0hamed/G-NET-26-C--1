@@ -1,7 +1,9 @@
 ﻿using System.Buffers.Text;
 using System.Collections;
+using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Timers;
 using System.Xml.Linq;
 using static System.Formats.Asn1.AsnWriter;
@@ -188,8 +190,24 @@ namespace G_NET_26_C__1
             #endregion
 
 
+            #region Question 9: C# Naming Rules
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 9: C# NAMING RULES
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: List five rules that must be followed when naming variables in C#.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+
+            //*Names must start with a letter or _(underscore).
+            //* Can contain letters, digits, and underscores(no spaces).
+            //* Avoid keywords
+            //* Avoid unclear abbreviations
+            //*case -sensitive: It varies from capital letter to small letter.
 
 
-    }
+            #endregion
+
+        }
     }
 }
