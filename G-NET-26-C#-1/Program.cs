@@ -208,6 +208,21 @@ namespace G_NET_26_C__1
 
             #endregion
 
+            #region Question 10: Naming Conventions
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 10: NAMING CONVENTIONS
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What naming conventions are recommended for: (a) local variables, 
+            //    (b) class names, (c) constants?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //(a)camelCase
+            //(b)PascalCase
+            //(c)PascalCase
+
+            #endregion
+
         }
     }
 }
