@@ -1,12 +1,14 @@
 ﻿using System.Buffers.Text;
 using System.Collections;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.Marshalling;
 using System.Security.Cryptography;
 using System.Timers;
 using System.Xml.Linq;
@@ -283,7 +285,29 @@ namespace G_NET_26_C__1
             //**the finally block //executes always//,Even if the try block has a return statement, the finally block will still execute before the method finishes.
             #endregion
 
+            #region Question 14: Common Built-in Exceptions
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 14: COMMON BUILT-IN EXCEPTIONS
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: List and explain five common built-in exceptions in C# with 
+            //    scenarios when each would occur.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+                //NullReferenceException:
+                //* MaybeNullWhenAttribute using null
+                //FormatException:
+                //* parsing with invalid format
+                //DivideByZeroException:
+                //*dividing int by 0
+                //IndexOutOfRangeException:
+                //* MarshalUsingAttribute invalid array index
+                //FileNotFoundException:
+                //*File does not exist
 
+
+
+            #endregion
 
 
 
