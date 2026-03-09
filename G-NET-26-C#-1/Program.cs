@@ -326,6 +326,20 @@ namespace G_NET_26_C__1
             #endregion
 
 
+            #region Question 16: throw Keyword
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 16: THROW KEYWORD
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: What is the difference between 'throw' and 'throw ex' when 
+            //    re-throwing an exception? Which one preserves the stack trace?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //throw: Keeps original location."preserves the stack trace"
+            //throw ex :Loses original location.
+            #endregion
+
+
 
         }
     }
