@@ -375,20 +375,36 @@ namespace G_NET_26_C__1
             //    behave differently when assigned to another variable.
             //
             // ══════════════════════════════════════════════════════════════════════
-            
 
-        //int x = 10;
-        //    int y = x; 
-        //    y = 20;
-        //    Console.WriteLine($" x = {x}, y = {y}");// x = 10, y = 20
-        //    Point p1 = new Point() { Coordinates ="(5,5)" };
-        //    Point p2 = p1;
-        //    p2.Coordinates = "(4,4)";
-        //    Console.WriteLine($" p1 = {p1.Coordinates}, p2 = {p2.Coordinates}");//p1 = (4, 4), p2 = (4, 4)
+
+            //int x = 10;
+            //    int y = x; 
+            //    y = 20;
+            //    Console.WriteLine($" x = {x}, y = {y}");// x = 10, y = 20
+            //    Point p1 = new Point() { Coordinates ="(5,5)" };
+            //    Point p2 = p1;
+            //    p2.Coordinates = "(4,4)";
+            //    Console.WriteLine($" p1 = {p1.Coordinates}, p2 = {p2.Coordinates}");//p1 = (4, 4), p2 = (4, 4)
             #endregion
-           
- 
+
+            #region Question 19: Object in C#
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 19: OBJECT IN C#
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Why is 'object' considered the base type of all types in C#? 
+            //    What methods does every type inherit from System.Object?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*because  allow classes and methods to work with different types of data.
+            //    **
+            //    *ToString()
+            //    * Equals()
+            //    * GetHashCode()
+            //    * GetType()
+            #endregion
         }
-       //* class Point { public string Coordinates; }
+        // Question 18: Value Types vs Reference Types
+        // * class Point { public string Coordinates; }
     }
 }
