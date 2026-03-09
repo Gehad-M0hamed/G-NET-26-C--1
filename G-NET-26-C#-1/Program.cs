@@ -15,6 +15,7 @@ using System.Xml.Linq;
 using static System.Formats.Asn1.AsnWriter;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
+using static System.Reflection.Metadata.BlobBuilder;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace G_NET_26_C__1
@@ -294,21 +295,35 @@ namespace G_NET_26_C__1
             //    scenarios when each would occur.
             //
             // ══════════════════════════════════════════════════════════════════════
-                //NullReferenceException:
-                //* MaybeNullWhenAttribute using null
-                //FormatException:
-                //* parsing with invalid format
-                //DivideByZeroException:
-                //*dividing int by 0
-                //IndexOutOfRangeException:
-                //* MarshalUsingAttribute invalid array index
-                //FileNotFoundException:
-                //*File does not exist
+            //NullReferenceException:
+            //* MaybeNullWhenAttribute using null
+            //FormatException:
+            //* parsing with invalid format
+            //DivideByZeroException:
+            //*dividing int by 0
+            //IndexOutOfRangeException:
+            //* MarshalUsingAttribute invalid array index
+            //FileNotFoundException:
+            //*File does not exist
 
 
 
             #endregion
 
+            #region Question 15: Multiple catch Blocks
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 15: MULTIPLE CATCH BLOCKS
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Why is the order of catch blocks important when handling multiple 
+            //    exceptions? Write code showing correct ordering.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //*it will "catch" every error, and the more specific catch blocks below it will never be reached.This results in a Compile-time error.
+            //* *catch (FormatException) { }
+            //  catch (ArgumentException) { }
+            //  catch (Exception) { } // Last!
+            #endregion
 
 
 
