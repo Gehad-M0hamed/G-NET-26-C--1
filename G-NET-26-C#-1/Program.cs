@@ -325,7 +325,6 @@ namespace G_NET_26_C__1
             //  catch (Exception) { } // Last!
             #endregion
 
-
             #region Question 16: throw Keyword
             // ══════════════════════════════════════════════════════════════════════
             // QUESTION 16: THROW KEYWORD
@@ -339,7 +338,32 @@ namespace G_NET_26_C__1
             //throw ex :Loses original location.
             #endregion
 
+            #region Question 17: Stack and Heap Memory
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 17: STACK AND HEAP MEMORY
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Explain the differences between Stack and Heap memory in C#. 
+            //    What types of data are stored in each?
+            //
+            // ══════════════════════════════════════════════════════════════════════
+        //Stack:
+        //    *Very Fast
+        //    * Limited(~1MB)
+        //    *Automatic
+        //    * Local Variables
+        //    *Method Parameters
+        //    *Return Addresses
+        //Heap:
+        //*Slower
+        //* Large(GBs)
+        //* Garbage Collector.
+        //* Objects(new)
+        //*Arrays
+        //*Strings
 
+
+            #endregion
 
         }
     }
