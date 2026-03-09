@@ -264,12 +264,26 @@ namespace G_NET_26_C__1
             //    you don't handle exceptions?
             //
             // ══════════════════════════════════════════════════════════════════════
-                //*allows a program to deal with unexpected runtime errors.
-                //*Prevent application crash.
-                //*Log details for debugging
-                //**The program will terminate immediately and "die".
+            //*allows a program to deal with unexpected runtime errors.
+            //*Prevent application crash.
+            //*Log details for debugging
+            //**The program will terminate immediately and "die".
 
             #endregion
+
+            #region Question 13: try-catch-finally
+            // ══════════════════════════════════════════════════════════════════════
+            // QUESTION 13: TRY-CATCH-FINALLY
+            // ══════════════════════════════════════════════════════════════════════
+            //
+            // Q: Write a code example demonstrating try-catch-finally. Explain when 
+            //    the finally block executes.
+            //
+            // ══════════════════════════════════════════════════════════════════════
+            //**the finally block //executes always//,Even if the try block has a return statement, the finally block will still execute before the method finishes.
+            #endregion
+
+
 
 
 
